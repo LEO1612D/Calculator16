@@ -1,0 +1,92 @@
+.design
+{
+    position: absolute;
+   
+    left:400pt;
+    background-color: #202020;
+    height: 500pt;
+    width:320pt;
+    color:white;
+    font-family:sans-serif;
+   padding:2pt;
+   border-radius:12pt;
+   padding-right: 15pt;
+   border-style:solid;
+   border-left-style: hidden;
+   border-right-style: hidden;
+ 
+   justify-content: center;
+   align-content: center;
+}
+
+td
+{
+    width: 100%;
+    
+}
+input[type=text]
+{
+    width:90%;
+    font-size:26pt;
+    border-radius: 2pt;
+    border-style: hidden;
+    padding: 10pt;
+}
+body{
+    padding:20pt;
+    background-color:#252525;
+    }
+
+ul{
+    display: flex;
+    list-style: none;
+}
+  
+    
+input[type=button]
+{
+    font-family: sans-serif;
+    font-size: 16pt;
+    padding:25pt;
+    background-color: #202020;
+    color:white;
+    border-style:hidden;
+    
+
+}
+/* div.n1input[type=button]:hover
+{
+    opacity:1;
+} */
+div.n1:hover input[type=button]{
+    opacity: 0.5;
+}
+
+div.n1:hover input[type=button]{
+    transform:scale(1);
+    opacity: .2;
+   
+
+}
+div.n1 input[type=button]:hover{
+    z-index: 1;
+    
+    opacity: 1;
+    cursor: pointer;
+    
+    
+   
+
+}
+.n1
+{
+   font-style: bold;
+}
+.tb
+{
+    width:90%;
+    font-size:26pt;
+    border-radius: 2pt;
+    border-style: hidden;
+    padding: 10pt;
+}
