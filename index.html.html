@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="maincalc.css">
+    <script>
+    
+    var str="";
+   
+
+    function add(name1)
+    {
+        if(name1=="Created by Nikunj" || name1=="Nikunj.16")
+        {
+
+            str=str+name1;
+        
+        document.getElementById("id1").innerHTML=str;
+        str="";
+        }
+        else
+        if(name1=="bk")
+        {
+            str=str.substr(0,str.length-1)
+           if(str.length!=0)
+           { 
+            
+            document.getElementById("id1").innerHTML=str;
+           }
+           else
+           { document.getElementById("id1").innerHTML="|";}
+           
+            
+        }
+        else
+        {
+        if(name1=="CEE")
+        {
+            str="";
+            document.getElementById("id1").innerHTML="|"+str;
+            
+        }
+        else{
+         str=str+name1;
+        
+        document.getElementById("id1").innerHTML=str;
+    }
+}
+    }
+    function evaluate1()
+    {
+       
+        
+        document.getElementById("id1").innerHTML=eval(str);
+    }
+    
+    
+    
+    </script>
+</head>
+<body>
+<div> 
+<div class="design" id="d1">
+<ul>
+    <li class="tb" id="id1">|</li>
+</ul>
+
+<div class="n1">
+
+
+<ul>
+    <li><input type="button" onclick="add('7')" value="7  "></li>
+    <li><input type="button" onclick="add('8')" value="  8"></li>
+    <li><input type="button" onclick="add('9')" value="  9  "></li>
+    <li><input type="button" onclick="add('*')" value="*"></li>
+</ul>
+
+<ul>
+    <li><input type="button" onclick="add('4')" value="4  "></li>
+    <li><input type="button" onclick="add('5')" value="  5"></li>
+    <li><input type="button" onclick="add('6')" value="  6  "></li>
+    <li><input type="button" onclick="add('-')" value="-"></li>
+</ul>
+
+<ul>
+    <li><input type="button" onclick="add('1')" value="1  "></li>
+    <li><input type="button" onclick="add('2')" value="  2"></li>
+    <li><input type="button" onclick="add('3')" value="  3  "></li>
+    <li><input type="button" onclick="add('+')" value="+"></li>
+</ul>
+
+<ul>
+    <li><input type="button" onclick="add('CEE')" value="CE" id="id2"></li>
+    <li><input type="button" onclick="add('0')" value="  0"></li>
+    <li><input type="button" onclick="add('.')" value="  .  "></li>
+    <li><input type="button"  value=" =" onclick="evaluate1()"></li>
+</ul>
+<ul>
+    
+    <li><input type="button" onclick="add('Created by Nikunj')" value="C"></li>
+    <li><input type="button" onclick="add('Nikunj.16')" value="CLC"></li>
+    <li><input type="button" onclick="add('/')" value="/"></li>
+    <li><input type="button" onclick="add('bk')" value="backspace" style="font-size: 14pt; padding:20pt;"></li>
+</ul>
+</div>
+
+
+
+
+
+</div>
+</div>
+<br><br><br>
+
+
+</body>
+</html>
